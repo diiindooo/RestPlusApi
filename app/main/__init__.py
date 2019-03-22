@@ -1,10 +1,10 @@
 from flask import Flask
-from flask_mysqldb import MySQL
+from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 
 from .config import config_by_name
 
-db = MySQL()
+db = SQLAlchemy()
 flask_bcrypt = Bcrypt()
 
 
